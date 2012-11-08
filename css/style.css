@@ -1,0 +1,51 @@
+/*
+Joshua Snyder
+VFW 1211
+Project 3
+*/
+
+html {
+    background-color: #E1DFD3;
+}
+
+#indexBody {
+    outline-style: ridge;
+    outline-color: gray;
+    outline-width: thin;
+    background-color: #FAEBD7;
+}
+
+#pIndex {
+    font: 1.0em "Arial Black", Gadget, sans-serif;
+    padding-left: 5px;
+}
+
+h1 {
+    margin: 20px;
+    font: 2.5em "Arial Black", Gadget, sans-serif;
+}
+
+label {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 2px;
+}
+
+fieldset {
+    background-color: #FAEBD7;
+}
+
+#items > ul > li {
+    outline-style: ridge;
+    outline-color: black;
+    outline-width: thin;
+    background-color: #FAEBD7;
+    margin-top: 10px
+}
+
+#items > ul > li > ul > li:nth-of-type(odd) {
+    background-color: white;
+}
