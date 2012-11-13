@@ -47,4 +47,4 @@ var json = {
 		"favorite": ["Go-To-Meal?:", "No"],
 		"rating": ["Rating:", "5"]
 	}
-}
+};

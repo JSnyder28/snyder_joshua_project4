@@ -88,7 +88,8 @@ window.addEventListener("DOMContentLoaded", function() {
 	var getData = function () {
 			toggleControls("on");
 			if(localStorage.length === 0) {
-					alert("No recipes to view");
+					alert("No recipes to view. Default data has been added");
+					autoFill();
 			}
 			// Write data from the local storage to the browser.
 			var makeDiv = document.createElement('div');
@@ -118,6 +119,16 @@ window.addEventListener("DOMContentLoaded", function() {
 					// Creates edit and delete link for each local storage item
 					makeItemLinks(localStorage.key(i), linksLi);
 			} 
+	};
+
+	// Populates the form with data when local storage is empty.
+	var autoFill = function () {
+			// The JSON Object data is coming from the json.js file, which is loaded through the HTML file.
+			// Stores the JSON Object data into local storage.
+			for (var n in json) {
+					var id = Math.floor(Math.random()*100000001);
+					localStorage.setItem(id, JSON.stringify(json[n]));
+			}
 	};
 
 	// Make Item links
