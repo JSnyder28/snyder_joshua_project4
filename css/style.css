@@ -38,12 +38,17 @@ fieldset {
     background-color: #FAEBD7;
 }
 
+#thumbnailImg {
+    padding-top: 3px;
+    padding-left: 2px;
+}
+
 #items > ul > li {
     outline-style: ridge;
     outline-color: black;
     outline-width: thin;
     background-color: #FAEBD7;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 #items > ul > li > ul > li:nth-of-type(odd) {

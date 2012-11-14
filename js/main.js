@@ -125,6 +125,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	// Display an image for the recipe category that is selected for the recipe.
 	var getImage = function (catName, makeSubList) {
 			var imgLi = document.createElement('li');
+			imgLi.setAttribute('id', 'thumbnailImg');
 			makeSubList.appendChild(imgLi);
 			var newImg = document.createElement('img');
 			var setSrc = newImg.setAttribute('src', 'img/' + catName + '.png');
