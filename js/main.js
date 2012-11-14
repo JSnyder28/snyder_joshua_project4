@@ -109,6 +109,7 @@ window.addEventListener("DOMContentLoaded", function() {
 					// JSON.parse converts local storage string value to an object.
 					var makeSubList = document.createElement('ul');
 					makeLi.appendChild(makeSubList);
+					getImage(obj.cat[1], makeSubList);
 					for(var l in obj) {
 							var makeSubLi = document.createElement('li');
 							makeSubList.appendChild(makeSubLi);
@@ -119,6 +120,15 @@ window.addEventListener("DOMContentLoaded", function() {
 					// Creates edit and delete link for each local storage item
 					makeItemLinks(localStorage.key(i), linksLi);
 			} 
+	};
+
+	// Display an image for the recipe category that is selected for the recipe.
+	var getImage = function (catName, makeSubList) {
+			var imgLi = document.createElement('li');
+			makeSubList.appendChild(imgLi);
+			var newImg = document.createElement('img');
+			var setSrc = newImg.setAttribute('src', 'img/' + catName + '.png');
+			imgLi.appendChild(newImg);
 	};
 
 	// Populates the form with data when local storage is empty.
