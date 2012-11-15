@@ -72,7 +72,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			getCheckboxValue();
 					var item 		= {};
 					item.cat 		= ["Category:", $('category').value];
-					item.date 		= ["Date Added", $('dateAdded').value];
+					item.date 		= ["Date Added:", $('dateAdded').value];
 					item.rcpName 	= ["Recipe Name:", $('rcpName').value];
 					item.directions = ["Directions:", $('directions').value];
 					item.favorite 	= ["Go-To-Meal?:", favoriteValue];
