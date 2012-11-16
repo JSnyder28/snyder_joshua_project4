@@ -13,6 +13,7 @@ html {
     outline-color: gray;
     outline-width: thin;
     background-color: #FAEBD7;
+    padding-bottom: 5px;
 }
 
 #pIndex {
@@ -20,8 +21,13 @@ html {
     padding-left: 5px;
 }
 
+#aIndex {
+    padding-left: 5px;
+}
+
 h1 {
-    font-family: "Brush Script MT", cursive;
+    font: 3.0em "Brush Script MT", cursive;
+    color: #A02934;
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5 );
     margin: 20px;
 }
@@ -40,14 +46,35 @@ fieldset {
     margin-bottom: 10px;
 }
 
+fieldset > legend {
+    font: 1.0em "Arial Black", Gadget, sans-serif;
+}
+
+fieldset > ul > li {
+    font: 0.9em "Arial Black", Gadget, sans-serif;
+}
+
+#rcpInfo > li {
+    padding-bottom: 2px;
+}
+
 #thumbnailImg {
     padding-top: 3px;
     padding-left: 2px;
 }
 
 #clearAll {
+    font: 1.5em "Brush Script MT", cursive;
     margin-left: 2px; 
     margin-right: 15px;
+}
+
+#viewLink {
+    font: 1.5em "Brush Script MT", cursive;
+}
+
+#addRcp {
+    font: 1.5em "Brush Script MT", cursive;
 }
 
 #items > ul > li {
@@ -63,4 +90,8 @@ fieldset {
 
 #items > ul > li > ul > li:nth-of-type(odd) {
     background-color: white;
+}
+
+#addIt {
+    font: 1.0em "Arial Black", Gadget, sans-serif;
 }
